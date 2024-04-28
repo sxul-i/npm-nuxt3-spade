@@ -8,7 +8,7 @@
     "vueFeatures": {
       "filter": true,
       "interpolationAsNonHTML": true,
-      "styleCSSVariableInjection": true,
+      "styleCSSVariableInjection": true
     }
   },
   "plugins": [
