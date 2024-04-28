@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "vueFeatures": {
+      "filter": true,
+      "interpolationAsNonHTML": true,
+      "styleCSSVariableInjection": true,
+    }
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    // add your eslint config extends here
+    "eslint:recommended",
+    "plugin:nuxt/recommended",
+    "plugin:vue/vue3-recommended", // for Vue 3
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "no-console": "error",
+    "no-debug": "off",
+    "no-unused-vars": "warn",
+    "prefer-const": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "useTabs": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "printWidth": 120,
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
